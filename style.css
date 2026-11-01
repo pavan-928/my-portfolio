@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #1e293b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 80px 10%;
+    min-height: 220px;
+}
+
+#home {
+    text-align: center;
+    padding-top: 130px;
+}
+
+#home h1 {
+    font-size: 42px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.8;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    animation: fadeUp 1s ease forwards;
+}
+
+.hero p {
+    animation: fadeUp 1s ease 0.3s both;
+}
+
+.hero a {
+    animation: fadeUp 1s ease 0.6s both;
+}
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.skill-card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
+}
+
+.button {
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
